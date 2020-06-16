@@ -2,10 +2,14 @@
     <div>
       <appbar></appbar>
       <v-main>  
-        Lista DE Productos
-        <v-btn @click="displayToyForm">Agregar Juguete</v-btn>
+        
+       <h1> Lista DE Productos</h1>
+       <v-row justify="center">
+        <v-btn class="btnn" @click="displayToyForm">Agregar Juguete</v-btn>
+        </v-row>
         <toy-form></toy-form>
         <toys-list></toys-list>   
+        
       </v-main>
        
     </div>
@@ -27,4 +31,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+h1{
+  margin: 2rem;
+}
 
+</style>

@@ -11,7 +11,7 @@
           class="headline grey lighten-2"
           primary-title
         >
-          Privacy Policy
+          Agregar Productos
         </v-card-title>
 
         <v-text-field label="Nombre" type="text" :value="currentToy.data.name" @input="updateName"></v-text-field>
