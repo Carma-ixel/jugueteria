@@ -3,20 +3,22 @@
       <appbar></appbar>
       <v-main>  
         
-       <h1> Lista DE Productos</h1>
+       <h1> Lista de Productos</h1>
        <v-row justify="center">
         <v-btn class="btnn" @click="displayToyForm">Agregar Juguete</v-btn>
         </v-row>
         <toy-form></toy-form>
         <toys-list></toys-list>   
-        
+        <v-overlay :value="loading">
+      <v-progress-circular indeterminate size="64"></v-progress-circular>
+    </v-overlay>
       </v-main>
        
     </div>
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapState } from 'vuex'
 import Appbar from '../components/Appbar'
 import ToysList from '../components/ToysList'
 import ToyForm from '../components/ToyForm'
@@ -28,6 +30,9 @@ export default {
   },
   methods:{
     ...mapActions (['displayToyForm'])
+  },
+  computed:{
+    ...mapState(['loading'])
   }
 }
 </script>
