@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app>
-    <v-card id="container">
+    <v-card id="container" class="mx-auto my-auto">
       <v-card-title class="pb-0"> 
         <h1 class="mx-auto">OTTO KLAUS</h1>
       </v-card-title>

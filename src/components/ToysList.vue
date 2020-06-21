@@ -7,6 +7,7 @@
           <th class="text-left">Productos</th>
           <th class="text-left">Precio</th>
           <th class="text-left">Stock</th>
+           <th class="text-left">Ejecución</th>
         </tr>
       </thead>
       <tbody>

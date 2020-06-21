@@ -12,6 +12,7 @@ export default new Vuex.Store({
     showForm: false,
     loading:false,
     currentToy: emptyToy(),
+   
   },
   mutations: {
     //inicializador guardían..?? wtf?

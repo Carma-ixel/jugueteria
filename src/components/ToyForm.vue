@@ -3,7 +3,7 @@
     <v-dialog
     :value="showForm"
       width="500"  
- 
+    persistent
     >
    
       <v-card>
